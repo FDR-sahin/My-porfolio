@@ -8,7 +8,7 @@ export default function Education() {
     >
       <div className="max-w-7xl mx-auto px-6">
         
-        {/* হেডার পার্ট: ওপর থেকে নিচে আসবে */}
+       
         <motion.div 
           initial={{ opacity: 0, y: -40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -24,12 +24,12 @@ export default function Education() {
           </h2>
         </motion.div>
 
-        {/* কার্ড লিস্ট */}
+       
         <div className="grid md:grid-cols-2 gap-8">
           {portfolioData.education.map((edu, idx) => (
             <motion.div
               key={idx}
-              // প্রথম কার্ডটি (idx 0) বাম থেকে আসবে, দ্বিতীয়টি (idx 1) ডান থেকে আসবে
+             
               initial={{ opacity: 0, x: idx % 2 === 0 ? -50 : 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: idx * 0.1 }}

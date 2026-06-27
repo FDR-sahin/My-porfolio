@@ -4,10 +4,10 @@ import pic from '../../assets/babu.png'
 export default function Hero() {
   return (
     <section className="relative max-w-7xl mx-auto px-6 pt-30 pb-32 min-h-[85vh] flex items-center justify-center">
-      {/* বড় স্ক্রিনে ২ কলামের গ্রিড লেআউট */}
+     
       <div className="grid md:grid-cols-2 gap-12 items-center  w-full">
         
-        {/* বাম পাশ: টেক্সট কনটেন্ট (Framer Motion Animation) */}
+       
         <motion.div 
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -48,19 +48,17 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        {/* ডান পাশ: ইমেজ সেকশন (Framer Motion Animation) */}
-       
-        {/* ডান পাশ: ইমেজ সেকশন (Framer Motion Animation) */}
+        
 <motion.div 
   initial={{ opacity: 0, x: 50 }}
   animate={{ opacity: 1, x: 0 }}
   transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
   className="flex justify-center items-center relative w-full mt-8 md:mt-0"
 >
-  {/* গ্লো ইফেক্ট (ব্যাকগ্রাউন্ড শ্যাডো) */}
+  
   <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500/10 to-emerald-500/10 rounded-full blur-3xl -z-10" />
   
-  {/* ইমেজ কন্টেইনার */}
+  
   <div className="relative group  sm:w-[400px] md:w-[450px] aspect-[3/4] md:h-[550px] rounded-2xl overflow-hidden border border-slate-800/80 bg-slate-900/40 p-2">
     <img 
       src={pic} 
